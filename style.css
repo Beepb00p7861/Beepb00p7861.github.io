@@ -3,6 +3,7 @@
 :root {
 	--dark: #5E2BFF;
 	--mid: #C04CFD;
+	--mid2: #FC6DAB;
 	--light: #F7F6C5;
 }
 
@@ -13,9 +14,12 @@
 }
 
 body {
-	background-color: #FC6DAB;
+	background-image: url(images/pink044.jpg);
+	background-color: var(--mid2);
 	font-family: 'Silkscreen';
 }
+
+
 
 .container {
 	top: 0;
@@ -65,6 +69,10 @@ body {
   	margin-bottom: 15px;
 }
 
+ .inner {
+  	padding: 0.25em 1em 0.3em 1em;
+ }
+
 .box h1, .box h2, .box h3, .box h4 {
   	background: var(--mid);
   	color: var(--light);
@@ -74,6 +82,44 @@ body {
   	border-bottom: 1px solid var(--dark);
  }
 
- .inner {
-  	padding: 0.25em 1em 0.3em 1em;
+ .box img {
+ 	max-width: 470px;
+ 	margin-top: 15px;
+ 	margin-bottom: 15px;
  }
+
+ .leftbar .box img, .rightbar .box img {
+ 	max-width: 145px;
+ }
+
+ .links {
+ 	list-style: none;
+ }
+
+ .links a {
+ 	text-decoration: none;
+ 	color: var(--mid);
+ }
+
+ .links a:hover {
+ 	text-decoration: underline;
+ 	color: var(--mid2);
+ }
+
+#playlist {
+	list-style: none;
+}
+
+#playlist li a {
+	color: var(--mid);
+}
+
+#playlist li a:hover {
+	color: var(--mid2);
+	text-decoration: none;
+}
+
+#playlist .current-song a {
+	color: var(--mid2);
+	text-decoration: none;
+}
