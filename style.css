@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400&display=swap');
+
+:root {
+	--dark: #5E2BFF;
+	--mid: #C04CFD;
+	--light: #F7F6C5;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #FC6DAB;
+	font-family: 'Silkscreen';
+}
+
+.container {
+	top: 0;
+	margin: 0 auto;
+	width: 880px;
+}
+
+.header {
+	border: 1px solid var(--dark);
+  	background: var(--mid);
+  	color: var(--light);
+  	text-align: center;
+  	margin-top: 10px;
+  	top: 0;
+  	height: auto;
+}
+
+.wrapper {
+	margin-top: 20px;
+	display: flex;
+
+}
+
+.leftbar, .rightbar {
+	width: 175px;
+}
+
+.leftbar {
+	margin-left: 0px;
+}
+
+.main {
+  	width: 500px;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+  
+.leftbar {
+  	margin-left: 0px;
+}
+
+.box {
+  	border: 1px solid var(--dark);
+  	background: var(--light);
+  	color: var(--dark);
+  	padding: 0;
+  	margin-bottom: 15px;
+}
+
+.box h1, .box h2, .box h3, .box h4 {
+  	background: var(--mid);
+  	color: var(--light);
+  	margin: 0;
+  	padding: 0.35em 0.25em 0.3em 0.25em;
+  	text-align: center;
+  	border-bottom: 1px solid var(--dark);
+ }
+
+ .inner {
+  	padding: 0.25em 1em 0.3em 1em;
+ }
